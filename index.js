@@ -5,7 +5,7 @@ const app = express();
 const port = 3012;
 
 
-
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
